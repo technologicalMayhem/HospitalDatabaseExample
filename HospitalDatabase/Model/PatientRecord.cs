@@ -5,6 +5,7 @@ namespace HospitalDatabaseExample.Model
 {
     public class PatientRecord
     {
+        public int PatientRecordId { get; set; }
         public virtual Patient Patient { get; set; }
         public virtual MedicalStaff MedicalStaff { get; set; }
         public DateTime Time { get; set; }

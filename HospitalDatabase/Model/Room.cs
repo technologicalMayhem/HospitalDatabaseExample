@@ -4,6 +4,7 @@ namespace HospitalDatabaseExample.Model
 {
     public class Room
     {
+        public int RoomId { get; set; }
         public string RoomName { get; set; }
         public EnumDepartment Department { get; set; }
         public EnumRoomType RoomType { get; set; }
