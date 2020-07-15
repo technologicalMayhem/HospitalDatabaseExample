@@ -26,28 +26,22 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="8" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="32" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="16" />
+            <RowDefinition Height="64" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="8" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Image Name="Logo" Grid.Column="1" Grid.Row="1" Stretch="None" Source="images/logo.png" />
-        <Grid Grid.Column="1" Grid.Row="5">
+        <Grid Grid.Column="1" Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <TextBlock Grid.Column="0" Grid.Row="0">© Tobias Freese</TextBlock>
-            <TextBlock Grid.Column="2" Grid.Row="0">v1.0</TextBlock>
+            <TextBlock Grid.Column="0">© Tobias Freese</TextBlock>
+            <TextBlock Grid.Column="2">v1.0</TextBlock>
         </Grid>
-        <Rectangle HorizontalAlignment="Left" Name="LoadingBar" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="3"
+        <Rectangle HorizontalAlignment="Left" Name="LoadingBar" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3"
                    Height="5" StrokeThickness="2">
             <Rectangle.Fill>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
