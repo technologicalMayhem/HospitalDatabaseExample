@@ -23,6 +23,7 @@ namespace HospitalManager
         public MainWindow()
         {
             InitializeComponent();
+            _percent = 1;
             LoadingBar.Width = 0;
             _timer = new DispatcherTimer();
             _timer.Tick += Update;
