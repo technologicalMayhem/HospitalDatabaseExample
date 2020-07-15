@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System.Data.Entity;
+using System.Windows;
+using HospitalDatabaseExample.Model;
 
 namespace HospitalManager
 {

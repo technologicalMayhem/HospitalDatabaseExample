@@ -5,19 +5,73 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:HospitalManager"
         WindowState="Maximized"
+        MinWidth="800"
+        MinHeight="600"
         mc:Ignorable="d"
         Title="Hospital Manager 2020">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="0,2"></Setter>
+        </Style>
+        <Style TargetType="Separator">
+            <Setter Property="Margin" Value="0,5,0,0"></Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="8" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="8" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="8" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="8" />
-        </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="1">Calvin is cute</TextBlock>
+        <DockPanel Grid.Row="0">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Open" />
+                    <MenuItem Header="_Close" />
+                    <MenuItem Header="_Save" />
+                </MenuItem>
+            </Menu>
+            <StackPanel />
+        </DockPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="8" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8" />
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="2" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="8" />
+            </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1" Grid.Row="0" Margin="2">
+                    <TextBlock>Record Lookup (F3)</TextBlock>
+                    <TextBox Margin="0,2" />
+                    <Separator/>
+                    <Label Content="Lookup" HorizontalAlignment="Center"/>
+                    <Button>Lorem Ipsum</Button>
+                    <Button>Lorem Ipsum</Button>
+                    <Button>Lorem Ipsum</Button>
+                    <Separator/>
+                    <Label Content="New Record" HorizontalAlignment="Center"/>
+                    <Button>Lorem Ipsum</Button>
+                    <Button>Lorem Ipsum</Button>
+                    <Button>Lorem Ipsum</Button>
+                    <Separator />
+                    <Label Content="Miscellaneous Functions" HorizontalAlignment="Center"/>
+                    <Button>Lorem Ipsum</Button>
+                    <Button>Lorem Ipsum</Button>
+                    <Button>Lorem Ipsum</Button>
+                    <Button>Lorem Ipsum</Button>
+                    <Button>Lorem Ipsum</Button>
+                    <Button>Lorem Ipsum</Button>
+                </StackPanel>
+            <!-- </Border> -->
+            <TabControl Grid.Column="3" Grid.Row="0">
+                <TabItem Header="John Smith">AAA</TabItem>
+                <TabItem Header="George Lastname">BBB</TabItem>
+                <TabItem Header="Mark Heatherfield">CCC</TabItem>
+            </TabControl>
+        </Grid>
     </Grid>
 </Window>
